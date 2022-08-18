@@ -1,0 +1,6 @@
+# Basic authentication list
+#
+# you can run proxy with arg --auth=<authorization file path> to enable web authentication.
+# list auth user below each one line like this format:
+#
+# username:password
