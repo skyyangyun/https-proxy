@@ -40,7 +40,7 @@ By default, proxy server run in HTTP mode. To use HTTPS mode, you need use two f
 
 example:
 ```shell
-proxy --cert=./.acme.sh/yangyun.name/fullchain.cer --key=./.acme.sh/yangyun.name/yangyun.name.key
+proxy --cert=./fullchain.cer --key=./example.com.key
 ```
 
 ## Proxy Basic Authorization
