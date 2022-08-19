@@ -28,7 +28,7 @@ certFile ? serveTls(handle, params) : serve(handle, params)
 const authString = auth ? Deno.readTextFileSync(auth) : ''
 const users = authString.match(/^(\w|:)+/gm) || []
 if(auth) {
-    certFile || console.warn('[Warning] pass basic authorization in HTTP is unsafely, please consider use HTTPS')
+    certFile || console.warn('[Warning] pass basic authorization on HTTP is unsafely, please consider use HTTPS')
     console.info(`load ${users.length} valid user`)
 }
 

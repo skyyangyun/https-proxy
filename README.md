@@ -1,11 +1,11 @@
 # https-proxy
-A heeps proxy server powered by deno
+A https proxy server powered by deno
 
 ## How to use
 
 ### Require Deno
 If you have deno. This is 2 way to use proxy server.
-#### 1. direct run script by github raw url
+#### 1. direct run script by GitHub raw url
 ```shell
 deno run --unstable --allow-net --allow-read https://raw.githubusercontent.com/skyyangyun/https-proxy/main/proxy.js
 ```
@@ -44,16 +44,16 @@ proxy --cert=./.acme.sh/yangyun.name/fullchain.cer --key=./.acme.sh/yangyun.name
 ```
 
 ## Proxy Basic Authorization
-To use basci authorization, you need assign `--auth=<authFilePath>` flag,
-you can check this repository `authorization` file for examle.
+To use basic authorization, you need assign `--auth=<authFilePath>` flag,
+you can check this repository `authorization` file for example.
 
 ```shell
 proxy --auth=./authorization
 ```
 
 loaded valid user number would print when program boot.
-```shell
+```
 Listening on http://:::8000/
-[Warning] pass basic authorization in HTTP is unsafely, please consider use HTTPS
+[Warning] pass basic authorization on HTTP is unsafely, please consider use HTTPS
 load 0 valid user
 ```
